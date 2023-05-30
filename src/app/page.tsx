@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import ReactAlertSample from "@/components/ReactAlertSample";
+import ReactAlertSample from '@/components/ReactAlertSample';
 
 export default function Home() {
   return (
