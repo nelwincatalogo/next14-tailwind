@@ -6,9 +6,20 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lintCheck": "next lint",
+    "fixLint": "pretty-quick",
+    "fixLintStage": "pretty-quick --staged",
+    "prepare": "husky install"
   },
   "dependencies": {
+    "next": "13.4.4",
+    "react": "18.2.0",
+    "react-alert": "^7.0.3",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.9.0",
+    "tailwindcss": "3.3.2"
+  },
+  "devDependencies": {
     "@types/node": "20.2.5",
     "@types/react": "18.2.7",
     "@types/react-alert": "^7.0.2",
@@ -16,13 +27,12 @@
     "autoprefixer": "10.4.14",
     "eslint": "8.41.0",
     "eslint-config-next": "13.4.4",
-    "next": "13.4.4",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.0",
     "postcss": "8.4.24",
-    "react": "18.2.0",
-    "react-alert": "^7.0.3",
-    "react-dom": "18.2.0",
-    "react-icons": "^4.9.0",
-    "tailwindcss": "3.3.2",
+    "prettier": "^2.8.8",
+    "pretty-quick": "^3.1.3",
     "typescript": "5.0.4"
   }
 }
