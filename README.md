@@ -8,14 +8,14 @@
 
 Run the following command to bootstrap your next-app using this template:
 
-```
-yarn create next-app [project-name] -e https://github.com/nelwincatalogo/next-tailwind
+```bash
+yarn create next-app [project-name] -e https://github.com/nelwincatalogo/next13-tailwind
 ```
 
 OR
 
-```
-npx create-next-app [project-name] -e https://github.com/nelwincatalogo/next-tailwind
+```bash
+npx create-next-app [project-name] -e https://github.com/nelwincatalogo/next13-tailwind
 ```
 
 ## Summary
