@@ -13,7 +13,7 @@ export default function ReactAlertSample() {
           alert.success('Oh look, an alert!');
           alert.error('Oh look, an alert!');
         }}
-        className="px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 active:scale-95 transition duration-300 ease-in-out"
+        className="rounded-md bg-green-500 px-4 py-2 text-white transition duration-300 ease-in-out hover:bg-green-600 active:scale-95"
       >
         Show Alert
       </button>
