@@ -8,12 +8,7 @@ import {
 } from 'react-icons/ai';
 import { HiX } from 'react-icons/hi';
 
-export default function AlertTemplate({
-  style,
-  options,
-  message,
-  close,
-}: AlertTemplateProps) {
+export default function AlertTemplate({ style, options, message, close }) {
   return (
     <div
       style={style}
