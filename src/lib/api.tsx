@@ -1,7 +1,7 @@
 'use client';
 
 import axios from 'axios';
-import CONFIG from '@/config';
+import CONFIG from '@/lib/config';
 
 export const BLOCKCHAIN = '/blockchain';
 
