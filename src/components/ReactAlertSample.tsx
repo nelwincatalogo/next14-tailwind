@@ -1,17 +1,18 @@
 'use client';
 
-import { useAlert } from 'react-alert';
+import { useToast } from '@/components/ui/use-toast';
 
 export default function ReactAlertSample() {
-  const alert = useAlert();
+  const { toast } = useToast();
 
   return (
     <div>
       <button
         onClick={() => {
-          alert.show('Oh look, an alert!');
-          alert.success('Oh look, an alert!');
-          alert.error('Oh look, an alert!');
+          toast({
+            title: 'Scheduled: Catch up',
+            description: 'Friday, February 10, 2023 at 5:57 PM',
+          });
         }}
         className="rounded-md bg-green-500 px-4 py-2 text-white transition duration-300 ease-in-out hover:bg-green-600 active:scale-95"
       >
