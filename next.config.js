@@ -2,7 +2,7 @@
 const nextConfig = {
   output: 'export',
   trailingSlash: true,
-  swcMinify: false,
+  swcMinify: true,
 };
 
 module.exports = nextConfig;

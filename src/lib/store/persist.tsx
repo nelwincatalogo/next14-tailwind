@@ -1,13 +1,14 @@
 'use client';
 
-import { hookstate, useHookstate } from '@hookstate/core';
+import { extend, hookstate, useHookstate } from '@hookstate/core';
 import { localstored } from '@hookstate/localstored';
+import { devtools } from '@hookstate/devtools';
 
 export const globalStatePersist = hookstate(
   {
     hello: false,
   },
-  localstored({ key: 'globalStatePersist' })
+  extend(localstored({ key: 'globalStatePersist' }), devtools({ key: 'globalStatePersist' }))
 );
 
 export const useGlobalStatePersist = () => useHookstate(globalStatePersist);
