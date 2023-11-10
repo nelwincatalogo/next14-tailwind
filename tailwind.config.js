@@ -15,6 +15,10 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        inter: ['var(--font-inter)'],
+        poppins: ['var(--font-poppins)'],
+      },
       keyframes: {
         'accordion-down': {
           from: { height: 0 },
