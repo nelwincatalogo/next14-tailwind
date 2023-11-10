@@ -6,9 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lintCheck": "next lint",
     "fixLint": "next lint --fix",
-    "fixLintStage": "pretty-quick --staged",
     "prepare": "husky install"
   },
   "dependencies": {
