@@ -1,7 +1,5 @@
 'use client';
 
-/* eslint-disable import/no-anonymous-default-export */
-
 export const currentMode = Number(process.env.NEXT_PUBLIC_ENV) || 0;
 export const config = [
   // dev mode
