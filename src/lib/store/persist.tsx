@@ -9,7 +9,7 @@ export const globalStatePersist = hookstate(
   {
     hello: false,
   },
-  extend(localstored({ key: 'globalStatePersist' }), devtools({ key: 'globalStatePersist' }))
+  extend(localstored({ key: 'globalStatePersist' }), devtools({ key: 'globalStatePersist' })),
 );
 
 export const useGlobalStatePersist = () => useHookstate(globalStatePersist);
