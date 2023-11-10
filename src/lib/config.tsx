@@ -2,17 +2,19 @@
 
 /* eslint-disable import/no-anonymous-default-export */
 
-export const currentNetwork = Number(process.env.NEXT_PUBLIC_ENV) || 0;
+export const currentMode = Number(process.env.NEXT_PUBLIC_ENV) || 0;
 export const config = [
+  // dev mode
   {
-    api_url: 'https://stg-api.anitolegends.com/v2',
+    api_url: 'https://example.com/api',
   },
+  // prod mode
   {
-    api_url: 'https://stg-api.anitolegends.com/v2',
+    api_url: 'https://example.com/api',
   },
 ];
 
 export default {
-  project: 'next13_tailwindcss_with_connect_wallet',
-  setting: config[currentNetwork],
+  project: 'next13_tailwindcss',
+  setting: config[currentMode],
 };
