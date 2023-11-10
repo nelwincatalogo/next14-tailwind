@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "fixLint": "next lint --fix",
+    "start-static": "npx serve@latest out",
+    "fix-lint": "next lint --fix",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -27,16 +28,16 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@types/node": "20.7.1",
-    "@types/react": "18.2.23",
-    "@types/react-dom": "18.2.8",
-    "autoprefixer": "10.4.15",
-    "eslint": "8.41.0",
+    "@types/node": "20.9.0",
+    "@types/react": "18.2.37",
+    "@types/react-dom": "18.2.15",
+    "autoprefixer": "10.4.16",
+    "eslint": "8.53.0",
     "eslint-config-next": "13.4.4",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "husky": "^8.0.0",
-    "postcss": "8.4.28",
+    "husky": "^8.0.3",
+    "postcss": "8.4.31",
     "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.3.0",
     "pretty-quick": "^3.1.3",
