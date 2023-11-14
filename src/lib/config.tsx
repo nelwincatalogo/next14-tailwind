@@ -13,6 +13,6 @@ export const config = [
 ];
 
 export default {
-  project: 'next13_tailwindcss',
+  project: 'next14_tailwind',
   setting: config[currentMode],
 };
