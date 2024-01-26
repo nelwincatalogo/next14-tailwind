@@ -9,7 +9,7 @@ export default function ReactAlertSample() {
   const gStateP = useGlobalStatePersist();
 
   useEffect(() => {
-    console.log(gStateP.hello.value);
+    console.log('Hello There: ', gStateP.hello.value);
   }, []);
 
   return (
