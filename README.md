@@ -25,6 +25,7 @@ npx create-next-app [project-name] -e https://github.com/nelwincatalogo/next14-t
 - [Absolute Import](https://nextjs.org/docs/advanced-features/module-path-aliases)
 - [Shadcn Toast](https://ui.shadcn.com/docs/components/toast)
 - [React Icons](https://react-icons.github.io/react-icons/search)
+- [hookstate](https://hookstate.js.org/) (state management)
 - Linting
   - prettier
   - eslint-config-prettier
