@@ -18,8 +18,8 @@ const poppins = Poppins({
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${inter.variable} ${poppins.variable} scroll-smooth`}>
+    <html lang="en" className="scroll-smooth">
+      <body className={`${inter.variable} ${poppins.variable}`}>
         {children}
         <Toaster />
       </body>
