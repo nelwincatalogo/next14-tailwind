@@ -30,7 +30,7 @@ npx create-next-app [project-name] -e https://github.com/nelwincatalogo/next14-t
   - prettier
   - eslint-config-prettier
   - eslint-plugin-prettier
-  - prettier-plugin-tailwindcss
+  - eslint-plugin-tailwindcss
 - Lint on pre-commit
   - Husky
 - Default Font [Poppins, Inter]

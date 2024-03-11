@@ -1,8 +1,15 @@
 {
-  "extends": ["next/core-web-vitals", "plugin:prettier/recommended"],
+  "root": true,
+  "extends": ["next/core-web-vitals", "plugin:prettier/recommended", "plugin:tailwindcss/recommended"],
   "rules": {
     "react-hooks/exhaustive-deps": "off",
     "@next/next/no-img-element": "off",
     "import/no-anonymous-default-export": "off"
-  }
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js"],
+      "parser": "@typescript-eslint/parser"
+    }
+  ]
 }
