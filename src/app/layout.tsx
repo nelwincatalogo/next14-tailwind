@@ -2,7 +2,7 @@
 
 import '@/styles/globals.css';
 import { Inter, Poppins } from 'next/font/google';
-import { Toaster } from '@/components/ui/toaster';
+import { Toaster } from '@/components/ui/sonner';
 
 const inter = Inter({
   subsets: ['latin'],
