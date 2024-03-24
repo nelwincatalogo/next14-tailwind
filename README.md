@@ -23,9 +23,10 @@ npx create-next-app [project-name] -e https://github.com/nelwincatalogo/next14-t
 - [Next.js](https://nextjs.org)
 - [TailwindCSS](https://tailwindcss.com/)
 - [Absolute Import](https://nextjs.org/docs/advanced-features/module-path-aliases)
-- [Shadcn Toast](https://ui.shadcn.com/docs/components/toast)
+- [Shadcn Sonner](https://ui.shadcn.com/docs/components/sonner)
 - [React Icons](https://react-icons.github.io/react-icons/search)
 - [hookstate](https://hookstate.js.org/) (state management)
+- [Metadata for SEO](https://nextjs.org/docs/app/api-reference/functions/generate-metadata)
 - Linting
   - prettier
   - eslint-config-prettier
@@ -33,5 +34,5 @@ npx create-next-app [project-name] -e https://github.com/nelwincatalogo/next14-t
   - eslint-plugin-tailwindcss
 - Lint on pre-commit
   - Husky
-- Default Font [Poppins, Inter]
+- Default Font [Geist, Poppins, Inter]
 - TypeScript Support
