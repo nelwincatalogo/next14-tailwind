@@ -80,3 +80,12 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .debug {
+    @apply border border-dashed border-red-500;
+  }
+  .form-error {
+    @apply text-sm italic mt-1 text-red-500 font-semibold;
+  }
+}
