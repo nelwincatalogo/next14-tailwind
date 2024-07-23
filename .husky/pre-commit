@@ -1,1 +1,1 @@
-yarn fix-lint
+yarn lint:fix

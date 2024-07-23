@@ -1,17 +1,9 @@
 'use client';
 
-import { useGlobalStatePersist } from '@/lib/store/persist';
-import { useEffect } from 'react';
 import { toast } from 'sonner';
 import { Button } from './ui/button';
 
 export default function ReactAlertSample() {
-  const gStateP = useGlobalStatePersist();
-
-  useEffect(() => {
-    console.log('Hello There: ', gStateP.hello.value);
-  }, []);
-
   return (
     <div className="flex flex-wrap justify-center gap-4">
       {/* Default */}

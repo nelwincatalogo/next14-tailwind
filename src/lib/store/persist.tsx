@@ -7,7 +7,7 @@ import { localstored } from './plugins/localStored';
 
 export const globalStatePersist = hookstate(
   {
-    hello: false,
+    test: false,
   },
   extend(localstored({ key: 'globalStatePersist' }), devtools({ key: 'globalStatePersist' })),
 );
