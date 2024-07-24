@@ -82,8 +82,9 @@
 }
 
 @layer utilities {
-  .debug {
-    @apply border border-dashed border-red-500;
+  .debug,
+  .debug > * {
+    @apply outline-dashed outline-green-400;
   }
   .form-error {
     @apply text-sm italic mt-1 text-red-500 font-semibold;
