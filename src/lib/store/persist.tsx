@@ -5,11 +5,33 @@ import { extend, hookstate, useHookstate } from '@hookstate/core';
 import { devtools } from '@hookstate/devtools';
 import { localstored } from './plugins/localStored';
 
+const initialState = {
+  test: false,
+};
+
 export const globalStatePersist = hookstate(
-  {
-    test: false,
-  },
-  extend(localstored({ key: 'globalStatePersist' }), devtools({ key: 'globalStatePersist' })),
+  initialState,
+  extend(
+    localstored({
+      key: 'globalStatePersist',
+      onRestored: (s) => {
+        const restored = s.get({ noproxy: true });
+
+        if (s.value) {
+          const synced = {
+            ...initialState,
+            ...restored,
+          };
+
+          console.log('restored state: ', synced);
+          s.set(synced);
+        } else {
+          console.log('restored state: localstorage is empty');
+        }
+      },
+    }),
+    devtools({ key: 'globalStatePersist' }),
+  ),
 );
 
 export const useGlobalStatePersist = () => useHookstate(globalStatePersist);

@@ -1,4 +1,4 @@
-import { ExtensionFactory, State } from '@hookstate/core';
+import { ExtensionFactory, hookstate, State } from '@hookstate/core';
 
 export interface StoreEngine {
   getItem: (key: string) => Promise<string | null> | string;
@@ -12,6 +12,7 @@ export function localstored<S, E>(options?: {
   key?: string;
   engine?: StoreEngine;
   initializer?: () => Promise<S>;
+  onRestored?: (s: State<S, E>) => void;
 }): ExtensionFactory<S, E, LocalStored> {
   return () => {
     let key: string;
@@ -66,6 +67,10 @@ export function localstored<S, E>(options?: {
             options.initializer().then((s) => {
               state.set(s);
             });
+          }
+
+          if (options?.onRestored) {
+            options.onRestored(persisted ? state : hookstate(null));
           }
         });
       },
