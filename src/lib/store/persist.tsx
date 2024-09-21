@@ -4,6 +4,7 @@ import { extend, hookstate, useHookstate } from '@hookstate/core';
 // import { localstored } from '@hookstate/localstored';
 import { devtools } from '@hookstate/devtools';
 import { localstored } from './plugins/localStored';
+import merge from 'lodash.merge';
 
 const initialState = {
   test: false,
@@ -18,10 +19,7 @@ export const globalStatePersist = hookstate(
         const restored = s.get({ noproxy: true });
 
         if (s.value) {
-          const synced = {
-            ...initialState,
-            ...restored,
-          };
+          const synced = merge({}, initialState, restored);
 
           console.log('restored state: ', synced);
           s.set(synced);
