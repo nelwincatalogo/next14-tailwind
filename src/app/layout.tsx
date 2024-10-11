@@ -10,10 +10,17 @@ export const metadata: Metadata = {
   description: 'Starter Template',
   keywords: ['nextjs', 'tailwindcss', 'template', 'starter', 'kit'],
   openGraph: {
+    siteName: 'Next-Tailwind Starter Template',
     title: 'Next-Tailwind Starter Template',
     description: 'Starter Template',
     images: '/banner/example.png',
     type: 'website',
+  },
+  twitter: {
+    title: 'Next-Tailwind Starter Template',
+    description: 'Starter Template',
+    images: '/banner/example.png',
+    card: 'summary_large_image',
   },
 };
 
