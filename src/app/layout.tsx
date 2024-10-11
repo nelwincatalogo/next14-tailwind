@@ -22,6 +22,11 @@ export const metadata: Metadata = {
     images: '/banner/example.png',
     card: 'summary_large_image',
   },
+  appleWebApp: {
+    title: 'Next-Tailwind Starter Template',
+    capable: true,
+    statusBarStyle: 'default',
+  },
 };
 
 export default function RootLayout({ children }) {
