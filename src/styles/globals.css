@@ -82,11 +82,37 @@
 }
 
 @layer utilities {
-  .debug,
+  .debug {
+    @apply outline-dashed outline-red-400;
+  }
   .debug > * {
     @apply outline-dashed outline-green-400;
   }
   .form-error {
     @apply text-sm italic mt-1 text-red-500 font-semibold;
   }
+}
+
+/* Waiting Loading */
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+.dot {
+  animation: blink 1.5s infinite;
+  animation-delay: calc(0.5s * var(--i));
+}
+.dot:nth-child(1) {
+  --i: 0;
+}
+.dot:nth-child(2) {
+  --i: 1;
+}
+.dot:nth-child(3) {
+  --i: 2;
 }

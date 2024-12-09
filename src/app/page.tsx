@@ -1,8 +1,15 @@
 'use client';
 
-import { AlertDialogDemo } from '@/components/AlertDialogSample';
-import { DialogCloseButton } from '@/components/DialogSample';
-import ReactAlertSample from '@/components/ReactAlertSample';
+import { SvgSpinnersBarsRotateFade } from '@/components/icons/SvgSpinnersBarsRotateFade';
+import { ButtonLoading } from '@/components/loading/ButtonLoading';
+import LoadingDots2 from '@/components/loading/loading-dots-2';
+import LoadingDots from '@/components/loading/LoadingDots';
+import { AlertDialogDemo } from '@/components/sample/AlertDialogSample';
+import { DialogCloseButton } from '@/components/sample/DialogSample';
+import ReactAlertSample from '@/components/sample/ReactAlertSample';
+import { DrawerDialogDemo } from '@/components/sample/responsive-dialog';
+import { AdvancedDateRangePicker } from '@/components/ui-collection/advance-range-date-picker';
+import { Badge } from '@/components/ui/badge';
 
 export default function Home() {
   return (
@@ -24,6 +31,31 @@ export default function Home() {
         <div className="flex gap-4">
           <AlertDialogDemo />
           <DialogCloseButton />
+          <DrawerDialogDemo />
+        </div>
+
+        <div className="mt-4 rounded-full bg-gray-300 px-3 py-1 text-xs">Badge Example</div>
+        <div className="flex gap-4">
+          <Badge variant="success">Success</Badge>
+          <Badge variant="warning">Warning</Badge>
+          <Badge variant="info">Info</Badge>
+          <Badge variant="error">Error</Badge>
+          <Badge variant="gray">Gray</Badge>
+          <Badge variant="orange">Orange</Badge>
+        </div>
+
+        <div className="mt-4 rounded-full bg-gray-300 px-3 py-1 text-xs">Advance Date Picker</div>
+        <div className="flex gap-4">
+          <AdvancedDateRangePicker />
+        </div>
+
+        <div className="mt-4 rounded-full bg-gray-300 px-3 py-1 text-xs">Loading Example</div>
+        <div className="flex items-center gap-4">
+          <SvgSpinnersBarsRotateFade className="size-4 animate-spin" />
+          <ButtonLoading />
+          <LoadingDots />
+          <LoadingDots2 />
+          <LoadingDots2 message="Please wait" dots="." />
         </div>
       </div>
     </main>
