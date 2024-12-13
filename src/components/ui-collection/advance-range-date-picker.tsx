@@ -78,7 +78,7 @@ export function AdvancedDateRangePicker({
   ];
 
   React.useEffect(() => {
-    onChange?.(value);
+    onChange?.(date);
   }, []);
 
   return (
