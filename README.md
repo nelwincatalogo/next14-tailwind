@@ -1,7 +1,7 @@
 # Next14-Tailwind Starter Template
 
 <p align="center">
-  <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--9bipHLLn--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/wwy6cp17cco1zk8wn0kb.jpeg" alt="twin, next, styled-components" width="500">
+  <img src="https://miro.medium.com/max/1200/1*Y6mWTVoATSq7NGBN49HX9w.jpeg" alt="twin, next, styled-components" width="500">
 </p>
 
 ## Getting Started

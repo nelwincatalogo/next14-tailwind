@@ -42,7 +42,7 @@
     "vaul": "^1.1.1"
   },
   "devDependencies": {
-    "@types/node": "22.6.1",
+    "@types/node": "22.10.2",
     "@types/react": "18.3.8",
     "@types/react-dom": "18.3.0",
     "@typescript-eslint/parser": "^7.6.0",
@@ -54,7 +54,7 @@
     "eslint-plugin-tailwindcss": "^3.17.5",
     "husky": "^9.1.7",
     "postcss": "8.4.49",
-    "prettier": "^3.3.3",
+    "prettier": "^3.4.2",
     "typescript": "5.5.4"
   }
 }

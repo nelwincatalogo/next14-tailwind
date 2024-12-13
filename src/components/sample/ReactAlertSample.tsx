@@ -1,7 +1,7 @@
 'use client';
 
 import { toast } from 'sonner';
-import { Button } from '../ui/button';
+import { Button } from '@/components/ui/button';
 
 export default function ReactAlertSample() {
   return (

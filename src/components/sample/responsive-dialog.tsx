@@ -1,6 +1,5 @@
 import * as React from 'react';
 
-import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import {
   Dialog,
@@ -23,6 +22,7 @@ import {
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { useMediaQuery } from '@/lib/hooks/utils/use-media-query';
+import { cn } from '@/lib/utils';
 
 export function DrawerDialogDemo() {
   const [open, setOpen] = React.useState(false);
