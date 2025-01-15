@@ -1,3 +1,5 @@
+'use client';
+
 import { ExtensionFactory, hookstate, State } from '@hookstate/core';
 
 export interface StoreEngine {

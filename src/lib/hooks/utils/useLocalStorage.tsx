@@ -1,4 +1,6 @@
-import { useState, useEffect } from 'react';
+'use client';
+
+import { useState } from 'react';
 
 // Hook
 function useLocalStorage(key, initialValue) {

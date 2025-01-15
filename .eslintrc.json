@@ -8,7 +8,8 @@
   "rules": {
     "react-hooks/exhaustive-deps": "off",
     "@next/next/no-img-element": "off",
-    "import/no-anonymous-default-export": "off"
+    "import/no-anonymous-default-export": "off",
+    "tailwindcss/no-custom-classname": "off"
   },
   "overrides": [
     {
