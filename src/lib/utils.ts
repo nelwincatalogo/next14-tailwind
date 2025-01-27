@@ -1,7 +1,8 @@
 import { type ClassValue, clsx } from 'clsx';
 import { toast } from 'sonner';
 import { twMerge } from 'tailwind-merge';
-import config from './config';
+
+export const isDevMode = process.env.NODE_ENV === 'development';
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -61,8 +62,4 @@ export function capitalize(str) {
   const capitalizedStr = capitalizedWords.join(' ');
 
   return capitalizedStr;
-}
-
-export function urlify(str: string, folder: string) {
-  return str?.includes('http') ? str : `${config.setting.api_url}/uploads${folder ? `/${folder}` : ''}/${str}`;
 }

@@ -3,6 +3,7 @@ import { GeistSans } from 'geist/font/sans';
 import { GeistMono } from 'geist/font/mono';
 import { Toaster } from '@/components/ui/sonner';
 import { Metadata } from 'next';
+import { isDevMode } from '@/lib/utils';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://vercel.com'),
@@ -27,6 +28,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>{isDevMode && <script src="https://unpkg.com/react-scan/dist/auto.global.js" async />}</head>
       <body className={`${GeistSans.variable} ${GeistMono.variable}`}>
         {children}
         <Toaster />
