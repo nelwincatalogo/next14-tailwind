@@ -24,7 +24,7 @@ export function localstored<S, E>(options?: {
     let storageEngine: StoreEngine | Storage;
 
     // Check if the code is running in a browser environment
-    if (typeof window !== 'undefined') {
+    if (window !== undefined) {
       // Use the specified storage engine or fallback to window.localStorage
       storageEngine = options?.engine || window.localStorage;
     } else {

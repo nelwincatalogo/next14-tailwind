@@ -12,8 +12,10 @@ const instance = axios.create({
 });
 
 instance.interceptors.request.use(function (config) {
-  const token = window.localStorage.getItem('token');
-  if (token) config.headers['Authorization'] = `Bearer ${token}`;
+  if (window !== undefined) {
+    const token = window.localStorage.getItem('token');
+    if (token) config.headers['Authorization'] = `Bearer ${token}`;
+  }
   return config;
 });
 
