@@ -1,8 +1,8 @@
 'use client';
 
 import { Loader2 } from 'lucide-react';
-import LoadingDots from './LoadingDots';
 import { cn } from '@/lib/utils';
+import LoadingDots from './loading-dots';
 
 export default function LoadingScreen({ message = 'Loading', className = '' }) {
   return (
@@ -11,7 +11,7 @@ export default function LoadingScreen({ message = 'Loading', className = '' }) {
         <Loader2 className="mx-auto size-6 animate-spin text-amber-500" />
         <div className="mt-2 flex items-center">
           <div>{message}</div>
-          <LoadingDots dot="." />
+          <LoadingDots dots="." />
         </div>
       </div>
     </div>

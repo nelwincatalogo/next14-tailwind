@@ -1,6 +1,6 @@
 'use client';
 
-export default function LoadingDots2({ message = '', dots = '•' }) {
+export default function LoadingDots({ message = '', dots = '•' }) {
   return (
     <div>
       {message}
