@@ -4,6 +4,7 @@ import { GeistMono } from 'geist/font/mono';
 import { Toaster } from '@/components/ui/sonner';
 import { Metadata } from 'next';
 import { isDevMode } from '@/lib/utils';
+import ReactQueryProvider from '@/providers/lib/react-query';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://vercel.com'),
@@ -30,7 +31,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className="scroll-smooth">
       <head>{isDevMode && <script src="https://unpkg.com/react-scan/dist/auto.global.js" async />}</head>
       <body className={`${GeistSans.variable} ${GeistMono.variable}`}>
-        {children}
+        <ReactQueryProvider>{children}</ReactQueryProvider>
         <Toaster />
       </body>
     </html>

@@ -49,6 +49,7 @@ npx create-next-app [project-name] -e https://github.com/nelwincatalogo/next14-t
 - Default Font [Geist, Poppins, Inter]
 - TypeScript Support
 - [React Scan](https://react-scan.com) - Live Code Scanning
+- [React Query](https://tanstack.com/query/latest/docs/framework/react/installation) - Data fetching and caching
 
 ## Contributing
 

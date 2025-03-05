@@ -23,6 +23,7 @@ src/
 │ ├── character/
 │ └── account/
 ├── lib/            # Shared utilities and configurations
+│ ├── api/          # Api configurations (axios instance)
 │ ├── config/       # App configurations
 │ ├── constants/    # Constants and enums
 │ ├── types/        # Shared TypeScript types
@@ -30,6 +31,7 @@ src/
 ├── providers/      # React context providers
 │ ├── web3/         # Web3 related providers
 │ └── app/          # App-level providers
+│ └── lib/          # Library providers (react-query)
 ├── store/          # Global state management
 │ ├── slices/       # State slices
 │ └── hooks/        # Store hooks
