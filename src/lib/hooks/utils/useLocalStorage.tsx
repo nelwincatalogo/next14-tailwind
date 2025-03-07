@@ -3,16 +3,14 @@
 import { useState } from 'react';
 
 // Hook
-function useLocalStorage(key, initialValue) {
+function useLocalStorage<T>(key: string, initialValue: T) {
   // State to store our value
-  const [storedValue, setStoredValue] = useState(() => {
+  const [storedValue, setStoredValue] = useState<T>(() => {
     try {
       // Get from local storage by key
       if (window !== undefined) {
         const item = window.localStorage.getItem(key);
-        if (item) {
-          return JSON.parse(item);
-        }
+        return item ? JSON.parse(item) : initialValue;
       }
 
       // Parse stored json or if none return initialValue
@@ -24,7 +22,7 @@ function useLocalStorage(key, initialValue) {
   });
 
   // Return a wrapped version of useState's setter function
-  const setValue = (value) => {
+  const setValue = (value: T | ((val: T) => T)) => {
     try {
       // Allow value to be a function so we have same API as useState
       const valueToStore = value instanceof Function ? value(storedValue) : value;
@@ -39,7 +37,7 @@ function useLocalStorage(key, initialValue) {
     }
   };
 
-  return [storedValue, setValue];
+  return [storedValue, setValue] as const;
 }
 
 export default useLocalStorage;
