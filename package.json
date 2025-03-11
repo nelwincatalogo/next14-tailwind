@@ -44,7 +44,7 @@
     "vaul": "^1.1.2"
   },
   "devDependencies": {
-    "@tanstack/eslint-plugin-query": "^5.66.1",
+    "@tanstack/eslint-plugin-query": "^5.67.2",
     "@types/lodash.merge": "^4.6.9",
     "@types/node": "22.13.9",
     "@types/react": "18.3.8",
