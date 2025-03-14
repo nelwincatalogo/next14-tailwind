@@ -10,6 +10,7 @@ import { Badge } from '@/components/ui/badge';
 import Loading from '../common/loading';
 import { ScrollArea } from '../ui/scroll-area';
 import { LoadingButton } from '../common/loading/loading-button';
+import LoadingFull from '../common/loading/loading-full';
 
 export default function Template() {
   return (
@@ -56,6 +57,8 @@ export default function Template() {
           <LoadingDots />
           <LoadingDots message="Please wait" dots="." />
         </div>
+
+        <LoadingFull className="mt-4" />
       </div>
     </ScrollArea>
   );
