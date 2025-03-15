@@ -1,10 +1,9 @@
 'use client';
 
 import axios from 'axios';
-import CONFIG from '@/lib/config';
 
 const instance = axios.create({
-  baseURL: CONFIG.setting.api_url,
+  baseURL: process.env.NEXT_PUBLIC_API_URL || '',
   headers: {
     'Content-Type': 'application/json',
     Accept: 'application/json',

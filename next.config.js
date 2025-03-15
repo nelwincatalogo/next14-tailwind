@@ -2,34 +2,33 @@ const { PHASE_PRODUCTION_BUILD } = require('next/constants');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = (phase, { defaultConfig }) => {
-  if (phase === PHASE_PRODUCTION_BUILD || process.env.NEXT_PUBLIC_ENV == '1') {
-    // Apply production-only configurations here
+  const baseConfig = {
+    ...defaultConfig,
+    output: 'export', // To enable a static export
+    trailingSlash: true, // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
+    swcMinify: true, // minify code
+    reactStrictMode: false, // prevent double rerendering
+  };
 
+  // Apply production-only configurations here
+  if (phase === PHASE_PRODUCTION_BUILD || process.env.NEXT_PUBLIC_ENV == '1') {
     return {
-      // To enable a static export
-      output: 'export',
-      // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
-      trailingSlash: true,
-      swcMinify: true,
-      // prevent double rerendering
-      reactStrictMode: false,
-      // remove logs, enable this on prod
+      ...baseConfig,
       compiler: {
         removeConsole: {
-          exclude: ['error'],
+          exclude: ['error', 'warn'], // remove logs except error and warn
         },
       },
     };
   }
 
   return {
-    // To enable a static export
-    output: 'export',
-    // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
-    trailingSlash: true,
-    swcMinify: true,
-    // prevent double rerendering
-    reactStrictMode: false,
+    ...baseConfig,
+    // Add development-specific settings
+    devIndicators: {
+      buildActivity: true,
+      buildActivityPosition: 'bottom-left',
+    },
   };
 };
 
