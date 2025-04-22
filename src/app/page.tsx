@@ -1,11 +1,10 @@
 'use client';
 
 import Template from '@/components/sample/template';
+import useClient from '@/lib/hooks/utils/useClient';
 
 export default function Home() {
-  return (
-    <main className="font-sans">
-      <Template />
-    </main>
-  );
+  const { isClient } = useClient();
+
+  return <main className="font-sans">{isClient && <Template />}</main>;
 }
