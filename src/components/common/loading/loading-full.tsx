@@ -1,13 +1,25 @@
 'use client';
 
+import { cn } from '@/lib/utils';
 import Loading from '../loading';
 import LoadingDots from '../loading/loading-dots';
 
-export default function LoadingFull({ ...props }) {
+interface LoadingFullProps {
+  className?: string;
+  message?: string;
+  dots?: string;
+}
+
+export default function LoadingFull({
+  className = '',
+  message = 'Loading Data',
+  dots = '.',
+  ...props
+}: LoadingFullProps) {
   return (
-    <div className="grid gap-2" {...props}>
+    <div className={cn('grid place-items-center gap-2', className)} {...props}>
       <Loading className="mx-auto" />
-      <LoadingDots message="Loading Data" dots="." />
+      <LoadingDots message={message} dots={dots} />
     </div>
   );
 }
