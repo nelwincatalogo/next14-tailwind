@@ -1,8 +1,46 @@
 {
   "recommendations": [
+    // vscode
+    "emmanuelbeziat.vscode-great-icons",
+    "compassak.intellij-idea-new-ui",
+
+    // auto
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-complete-tag",
+    "steoates.autoimport",
+    "formulahendry.auto-rename-tag",
+    "chamboug.js-auto-backticks",
+    "sirmspencer.vscode-autohide",
+
+    // git
+    "mhutchie.git-graph",
+    "jackiotyu.git-worktree-manager",
+    "maattdd.gitless",
+    "seatonjiang.gitmoji-vscode",
+
+    // formatting
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
+    "usernamehw.errorlens",
+    "aaron-bond.better-comments",
+    "Cardinal90.multi-cursor-case-preserve",
+
+    // typescript
     "vladimirsharavanov.interface-builder",
-    "usernamehw.errorlens"
+
+    // csv files
+    "mechatroner.rainbow-csv",
+
+    // tailwind
+    "bradlc.vscode-tailwindcss",
+    "stivo.tailwind-fold",
+
+    // intellisense
+    "christian-kohler.path-intellisense",
+    "christian-kohler.npm-intellisense",
+    "codeandstuff.package-json-upgrade",
+
+    // ai
+    "Augment.vscode-augment"
   ]
 }

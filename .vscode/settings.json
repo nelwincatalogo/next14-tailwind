@@ -1,10 +1,12 @@
 {
-  "editor.fontSize": 16,
+  // editor
   "workbench.tree.indent": 22,
+  "editor.fontSize": 16,
   "editor.tabSize": 2,
   "editor.detectIndentation": true,
   "editor.stickyScroll.enabled": true,
   "editor.bracketPairColorization.enabled": true,
+  "editor.inlineSuggest.syntaxHighlightingEnabled": true,
 
   //   inlay hints
   "editor.inlayHints.enabled": "on",
@@ -33,11 +35,63 @@
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
   // tailwind
   "tailwindCSS.experimental.classRegex": [["tva\\((([^()]*|\\([^()]*\\))*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]],
+  "tailwind-fold.autoFold": true,
+
+  // better comments
+  "better-comments.multilineComments": true,
+  "better-comments.highlightPlainText": false,
+  "better-comments.tags": [
+    {
+      "tag": "!",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "?",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "//",
+      "color": "#474747",
+      "strikethrough": true,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "todo",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "*",
+      "color": "#98C379",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    }
+  ],
 
   // git
   "git.autofetch": true
