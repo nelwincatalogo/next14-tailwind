@@ -7,6 +7,7 @@
   "editor.stickyScroll.enabled": true,
   "editor.bracketPairColorization.enabled": true,
   "editor.inlineSuggest.syntaxHighlightingEnabled": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
 
   //   inlay hints
   "editor.inlayHints.enabled": "on",
