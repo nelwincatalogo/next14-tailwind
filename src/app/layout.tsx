@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     siteName: 'Next-Tailwind Starter Template',
     title: 'Next-Tailwind Starter Template',
     description: 'Starter Template',
-    images: '/banner/example.png',
+    images: '/banner.png',
     type: 'website',
   },
   twitter: {
     title: 'Next-Tailwind Starter Template',
     description: 'Starter Template',
-    images: '/banner/example.png',
+    images: '/banner.png',
     card: 'summary_large_image',
   },
 };
