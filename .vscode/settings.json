@@ -16,6 +16,7 @@
   "typescript.inlayHints.parameterNames.enabled": "all",
 
   //   formatting
+  "editor.wordWrap": "on",
   "editor.formatOnSave": true,
   "eslint.format.enable": true,
   "editor.codeActionsOnSave": {
