@@ -3,8 +3,9 @@
 import { extend, hookstate, useHookstate } from '@hookstate/core';
 // import { localstored } from '@hookstate/localstored';
 import { devtools } from '@hookstate/devtools';
-import { localstored } from './plugins/localStored';
 import merge from 'lodash.merge';
+
+import { localstored } from './plugins/localStored';
 
 const initialState = {
   test: false,

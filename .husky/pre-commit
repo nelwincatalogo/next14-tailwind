@@ -1,2 +1,2 @@
-yarn lint:staged
+yarn format:staged
 yarn build

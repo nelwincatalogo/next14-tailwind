@@ -1,8 +1,9 @@
 'use client';
 
 import { Button } from '@/components/ui/button';
-import Loading from '.';
 import { cn } from '@/lib/utils';
+
+import Loading from '.';
 
 interface LoadingButtonProps {}
 

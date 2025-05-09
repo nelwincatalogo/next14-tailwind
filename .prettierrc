@@ -2,5 +2,22 @@
   "endOfLine": "auto",
   "singleQuote": true,
   "tabWidth": 2,
-  "printWidth": 120
+  "printWidth": 120,
+
+  "plugins": ["@ianvs/prettier-plugin-sort-imports"],
+
+  "importOrder": [
+    "node",
+    "",
+    "<THIRD_PARTY_MODULES>",
+    "",
+    "^@/(.*)$",
+    "",
+    "^[./]",
+    "",
+    "^\\./(.\\.(css|scss|sass|less))$"
+  ],
+  "importOrderParserPlugins": ["typescript", "jsx", "decorators-legacy"],
+  "importOrderTypeScriptVersion": "5.0.0",
+  "importOrderCaseSensitive": false
 }

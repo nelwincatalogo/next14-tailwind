@@ -1,10 +1,11 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import regions from '@/public/address/region.json';
-import provinces from '@/public/address/province.json';
-import cities from '@/public/address/city.json';
+
 import barangays from '@/public/address/barangay.json';
+import cities from '@/public/address/city.json';
+import provinces from '@/public/address/province.json';
+import regions from '@/public/address/region.json';
 
 export type RegionType = {
   id: number;

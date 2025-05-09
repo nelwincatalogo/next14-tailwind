@@ -1,11 +1,13 @@
 'use client';
 
-import axios from '@/lib/api';
-import { useGlobalStatePersist } from '@/lib/store/persist';
 import { hookstate, useHookstate } from '@hookstate/core';
 import { devtools } from '@hookstate/devtools';
 import { useQuery } from '@tanstack/react-query';
 import { endOfMonth, startOfMonth } from 'date-fns';
+
+import axios from '@/lib/api';
+import { useGlobalStatePersist } from '@/lib/store/persist';
+
 import { IMarketplaceTopProducts } from '../types';
 
 // State

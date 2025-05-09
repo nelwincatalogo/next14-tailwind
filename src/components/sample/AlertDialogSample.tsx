@@ -1,5 +1,7 @@
 'use client';
 
+import { useState } from 'react';
+
 import {
   AlertDialog,
   AlertDialogAction,
@@ -12,7 +14,6 @@ import {
   AlertDialogTrigger,
 } from '@/components/ui/alert-dialog';
 import { Button } from '@/components/ui/button';
-import { useState } from 'react';
 
 export function AlertDialogDemo() {
   // use this if you want to control the alert dialog programatically

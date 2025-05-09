@@ -1,4 +1,4 @@
-import { useHookstate, State } from '@hookstate/core';
+import { State, useHookstate } from '@hookstate/core';
 import { useEffect } from 'react';
 
 /**

@@ -19,5 +19,6 @@
       "files": ["*.ts", "*.tsx", "*.js"],
       "parser": "@typescript-eslint/parser"
     }
-  ]
+  ],
+  "ignorePatterns": ["node_modules", ".next", ".turbo", "public", "out", "next-env.d.ts", "*.lock"]
 }

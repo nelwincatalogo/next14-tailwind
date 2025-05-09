@@ -7,10 +7,11 @@ import ReactAlertSample from '@/components/sample/ReactAlertSample';
 import { DrawerDialogDemo } from '@/components/sample/responsive-dialog';
 import { AdvancedDateRangePicker } from '@/components/ui-collection/advance-range-date-picker';
 import { Badge } from '@/components/ui/badge';
+
 import Loading from '../common/loading';
-import { ScrollArea } from '../ui/scroll-area';
 import { LoadingButton } from '../common/loading/loading-button';
 import LoadingFull from '../common/loading/loading-full';
+import { ScrollArea } from '../ui/scroll-area';
 
 export default function Template() {
   return (

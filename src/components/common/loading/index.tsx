@@ -1,6 +1,7 @@
 'use client';
 
 import { cn } from '@/lib/utils';
+
 import { SvgSpinnersBarsRotateFade } from '../icons/SvgSpinnersBarsRotateFade';
 
 interface LoadingProps {

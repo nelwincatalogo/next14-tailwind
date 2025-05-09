@@ -1,9 +1,11 @@
 'use client';
 
 import { hookstate, useHookstate } from '@hookstate/core';
-import { localstored } from '../store/plugins/localStored';
-import axios from '@/lib/api';
 import merge from 'lodash.merge';
+
+import axios from '@/lib/api';
+
+import { localstored } from '../store/plugins/localStored';
 
 // Initial State
 const initialState = {

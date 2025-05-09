@@ -1,6 +1,7 @@
 'use client';
 
 import axios from 'axios';
+
 import { env } from '@/lib/config/env';
 
 const instance = axios.create({
