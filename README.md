@@ -32,24 +32,39 @@ npx create-next-app [project-name] -e https://github.com/nelwincatalogo/next14-t
 
 ## Summary
 
-- [Next.js](https://nextjs.org)
-- [TailwindCSS](https://tailwindcss.com/)
-- [Absolute Import](https://nextjs.org/docs/advanced-features/module-path-aliases)
-- [Shadcn Sonner](https://ui.shadcn.com/docs/components/sonner)
-- [React Icons](https://react-icons.github.io/react-icons/search)
-- [hookstate](https://hookstate.js.org/) (state management)
-- [Metadata for SEO](https://nextjs.org/docs/app/api-reference/functions/generate-metadata)
-- Linting
-  - prettier
-  - eslint-config-prettier
-  - eslint-plugin-prettier
-  - eslint-plugin-tailwindcss
-- Lint on pre-commit
-  - Husky
-- Default Font [Geist, Poppins, Inter]
-- TypeScript Support
-- [React Scan](https://react-scan.com) - Live Code Scanning
-- [React Query](https://tanstack.com/query/latest/docs/framework/react/installation) - Data fetching and caching
+### Core Features
+
+- **Next.js 14** (App Router, TypeScript, built-in Metadata/SEO)
+- **React 18** (Concurrent features, modern rendering)
+- **TailwindCSS v3** with custom theme and dark mode (via `next-themes`)
+- **Absolute imports** with aliases (see `components.json`)
+- **TypeScript** by default
+- **Pre-configured fonts:** Geist, Inter, Poppins
+
+### UI & Components
+
+- [shadcn/ui](https://ui.shadcn.com/) components: AlertDialog, Dialog, Drawer, Popover, Badge, Calendar, Input, ScrollArea, Sonner (toast), and more
+- **Custom UI collection**: Advanced Date Range Picker, Loading states, and sample components
+- [React Icons](https://react-icons.github.io/react-icons/), [Lucide React](https://lucide.dev/)
+
+### State & Data Management
+
+- [hookstate](https://hookstate.js.org/) (with devtools, localstorage persistence)
+- [React Query](https://tanstack.com/query/latest/docs/framework/react/installation) (with devtools, sample hooks, and provider)
+
+### Utilities & Tooling
+
+- [Prettier](https://prettier.io/), [ESLint](https://eslint.org/) (with Tailwind and Prettier plugins)
+- [Husky](https://typicode.github.io/husky/) (lint on pre-commit)
+- [Zod](https://zod.dev/) for schema validation
+- [Axios](https://axios-http.com/) for HTTP requests
+- [date-fns](https://date-fns.org/) for date utilities
+
+### Developer Experience
+
+- **Sample pages/components**: Dialogs, toasts, loading, forms, advanced date picker, etc.
+- **Metadata/SEO** setup in `app/layout.tsx`
+- **Ready-to-use scripts**: dev, build, lint, format, prepare
 
 ## Contributing
 
