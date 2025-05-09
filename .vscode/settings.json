@@ -7,6 +7,7 @@
   "editor.stickyScroll.enabled": true,
   "editor.bracketPairColorization.enabled": true,
   "editor.inlineSuggest.syntaxHighlightingEnabled": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
   "typescript.tsdk": "node_modules/typescript/lib",
 
   //   inlay hints
@@ -41,7 +42,9 @@
 
   // tailwind
   "tailwindCSS.experimental.classRegex": [["tva\\((([^()]*|\\([^()]*\\))*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]],
-  "tailwind-fold.autoFold": true,
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
 
   // better comments
   "better-comments.multilineComments": true,
@@ -95,5 +98,19 @@
   ],
 
   // git
-  "git.autofetch": true
+  "git.autofetch": true,
+  "git-worktree-manager.worktreeCopyIgnores": [
+    "**/node_modules/**",
+    "**/dist/**",
+    "**/.git/**",
+    "**/.svn/**",
+    "**/.hg/**",
+    "**/CVS/**",
+    "**/Thumbs.db/**",
+    "**/.DS_Store",
+    "**/out/**",
+    "**/.next/**",
+    "**/.vscode/**"
+  ],
+  "git-worktree-manager.worktreeCopyPatterns": [".env", ".vscode/**", "*.local", ".env.local"]
 }

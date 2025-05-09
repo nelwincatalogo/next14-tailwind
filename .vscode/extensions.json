@@ -33,7 +33,7 @@
 
     // tailwind
     "bradlc.vscode-tailwindcss",
-    "stivo.tailwind-fold",
+    "Etsi0.class-collapse",
 
     // intellisense
     "christian-kohler.path-intellisense",
