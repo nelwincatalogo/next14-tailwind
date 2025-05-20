@@ -21,8 +21,8 @@ import {
 } from '@/components/ui/drawer';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { useMediaQuery } from '@/lib/hooks/utils/use-media-query';
-import { cn } from '@/lib/utils';
+import { useMediaQuery } from '@/core/hooks/utils/use-media-query';
+import { cn } from '@/core/utils';
 
 export function DrawerDialogDemo() {
   const [open, setOpen] = React.useState(false);

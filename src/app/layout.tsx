@@ -5,7 +5,7 @@ import { GeistSans } from 'geist/font/sans';
 import { Metadata } from 'next';
 
 import { Toaster } from '@/components/ui/sonner';
-import { isDevMode } from '@/lib/utils';
+import { isDevMode } from '@/core/utils';
 import ReactQueryProvider from '@/providers/lib/react-query';
 
 export const metadata: Metadata = {

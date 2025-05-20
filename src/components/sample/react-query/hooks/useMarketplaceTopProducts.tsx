@@ -5,8 +5,8 @@ import { devtools } from '@hookstate/devtools';
 import { useQuery } from '@tanstack/react-query';
 import { endOfMonth, startOfMonth } from 'date-fns';
 
-import axios from '@/lib/api';
-import { useGlobalStatePersist } from '@/lib/store/persist';
+import axios from '@/core/api';
+import { useGlobalStatePersist } from '@/store/persist';
 
 import { IMarketplaceTopProducts } from '../types';
 

@@ -1,6 +1,6 @@
 'use client';
 
-import { cn } from '@/lib/utils';
+import { cn } from '@/core/utils';
 
 import { SvgSpinnersBarsRotateFade } from '../icons/SvgSpinnersBarsRotateFade';
 

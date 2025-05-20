@@ -2,7 +2,7 @@
 
 import axios from 'axios';
 
-import { env } from '@/lib/config/env';
+import { env } from '@/core/config/env';
 
 const instance = axios.create({
   baseURL: env.NEXT_PUBLIC_API_URL,

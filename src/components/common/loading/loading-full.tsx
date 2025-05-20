@@ -1,6 +1,6 @@
 'use client';
 
-import { cn } from '@/lib/utils';
+import { cn } from '@/core/utils';
 
 import Loading from '../loading';
 import LoadingDots from '../loading/loading-dots';

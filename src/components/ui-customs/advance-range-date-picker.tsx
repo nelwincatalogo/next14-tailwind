@@ -19,8 +19,8 @@ import { Calendar } from '@/components/ui/calendar';
 import { Input } from '@/components/ui/input';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { ScrollArea } from '@/components/ui/scroll-area';
-import useLocalStorage from '@/lib/hooks/utils/useLocalStorage';
-import { cn } from '@/lib/utils';
+import useLocalStorage from '@/core/hooks/utils/useLocalStorage';
+import { cn } from '@/core/utils';
 
 export interface DateRange {
   from: Date;

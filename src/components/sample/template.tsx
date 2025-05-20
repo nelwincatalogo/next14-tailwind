@@ -5,7 +5,7 @@ import { AlertDialogDemo } from '@/components/sample/AlertDialogSample';
 import { DialogCloseButton } from '@/components/sample/DialogSample';
 import ReactAlertSample from '@/components/sample/ReactAlertSample';
 import { DrawerDialogDemo } from '@/components/sample/responsive-dialog';
-import { AdvancedDateRangePicker } from '@/components/ui-collection/advance-range-date-picker';
+import { AdvancedDateRangePicker } from '@/components/ui-customs/advance-range-date-picker';
 import { Badge } from '@/components/ui/badge';
 
 import Loading from '../common/loading';
