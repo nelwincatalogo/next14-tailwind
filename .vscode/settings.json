@@ -1,7 +1,7 @@
 {
   // editor
   "workbench.tree.indent": 22,
-  "editor.fontSize": 16,
+  "editor.fontSize": 15,
   "editor.tabSize": 2,
   "editor.detectIndentation": true,
   "editor.stickyScroll.enabled": true,
