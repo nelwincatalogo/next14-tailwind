@@ -9,7 +9,7 @@
     "start": "next start",
     "start:static": "npx serve@latest out",
     "lint": "eslint . && tsc --noEmit --skipLibCheck",
-    "lint:fix": "eslint . --fix",
+    "lint:fix": "eslint . --fix && tsc --noEmit --skipLibCheck",
     "format": "pretty-quick && tsc --noEmit --skipLibCheck",
     "format:staged": "pretty-quick --staged && tsc --noEmit --skipLibCheck",
     "prepare": "husky"
